@@ -22,7 +22,7 @@ function App() {
     setSearchQuery(e.target.value);
   };
 
-  useEffect(() => {
+  const handleSearchSubmit = () => {
     if (searchQuery === '') {
       fetch(API_POPULAR_URL)
         .then(response => response.json())
@@ -34,17 +34,21 @@ function App() {
         .then(data => setMovies(data.results))
         .catch(error => console.log(error));
     }
-  }, [searchQuery]);
+  };
 
   return (
     <div>
       <div className="search-container">
-        <input className="search-input"
+        <input
+          className="search-input"
           type="text"
           placeholder="Search for a movie..."
           value={searchQuery}
           onChange={handleSearchInput}
         />
+        <button className="search-button" onClick={handleSearchSubmit}>
+          Search
+        </button>
       </div>
       <div className="movie-container">
         {movies.map(movie => (
