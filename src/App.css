@@ -29,15 +29,33 @@ body {
 .search-button {
   margin-left: 1rem;
   padding: 0.5rem 1rem;
+  font-size: 1rem;
   background-color: #0074d9;
   color: white;
   border: none;
   border-radius: 0.25rem;
   cursor: pointer;
+  margin-left: 0.5rem;
 }
 
 .search-button:hover {
   background-color: #0063aa;
+}
+
+.media-type-toggle {
+  margin-left: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #3b00fe;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.media-type-toggle:hover {
+  background-color: #008dd9;
 }
 
 /* Define grid for movie cards */
