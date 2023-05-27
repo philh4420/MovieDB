@@ -133,6 +133,7 @@ header {
   font-size: 0.875rem;
   margin: 0;
   color: #ccc;
+  padding-bottom: 10px;
 }
 
 /* Media Queries */
