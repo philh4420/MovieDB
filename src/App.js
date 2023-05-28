@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Movie from '../src/Movie';
 import './App.css';
 
-const API_KEY = '66960d3b38e7771e0fbadad49521d15f';
+const API_KEY = 'f14af19e54da6807682367f768d47fc3';
 const API_BASE_URL = 'https://api.themoviedb.org/3';
 const API_POPULAR_MOVIES_URL = `${API_BASE_URL}/discover/movie?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
 const API_POPULAR_TVSHOWS_URL = `${API_BASE_URL}/discover/tv?api_key=${API_KEY}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`;
